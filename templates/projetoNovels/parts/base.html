@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'css/styles.css' %}" >
+</head>
+<body>
+    {% include 'projetoNovels/parts/header.html' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'projetoNovels/parts/footer.html' %}
+</body>
+</html>
